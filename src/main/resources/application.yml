@@ -2,5 +2,25 @@ server:
   port: 9090
   servlet:
     context-path: /zoo
+  tomcat:
+    max-threads: 10
+    accesslog:
+      directory: ./logs
 
+
+#logback-spring.xml配置默认加载，不用指定
+
+---
+
+#开发测试环境配置
+
+spring:
+  profiles:
+    active: dev
+server:
+  port: 9090
+  tomcat:
+    max-threads: 3
+    accesslog:
+      directory: ./logs
 

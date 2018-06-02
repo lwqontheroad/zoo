@@ -11,7 +11,7 @@
          </filter>-->
         <!--日志输出格式-->
         <encoder>
-            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %highlight[%-5level] [%contextName] [%thread] [%logger{36}(%L\)] - %msg%n</pattern>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %highlight[%-5level] [%contextName] [%thread] [%logger{36}:%L] - %msg%n</pattern>
         </encoder>
     </appender>
 
@@ -22,7 +22,7 @@
             <fileNamePattern>${log.path}/logback.%d{yyyy-MM-dd_HH}.log</fileNamePattern>
         </rollingPolicy>
         <encoder>
-            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %highlight[%-5level] [%contextName] [%thread] [%logger{36}(%L\)] - %msg%n</pattern>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %highlight[%-5level] [%contextName] [%thread] [%logger{36}:%L] - %msg%n</pattern>
         </encoder>
     </appender>
 
